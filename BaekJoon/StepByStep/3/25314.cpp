@@ -1,11 +1,22 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    int n;
-    cin >> n;
+int main() 
+{
+	int T;
+	cin >> T;
 
-    
+	string output;
 
-    return 0;
+	for (int i = 0; i < T / 4; i++)
+	{
+		output += "long ";
+	}
+
+	if(T % 4 != 0)
+		output += "long ";
+
+	output += "int";
+
+	cout << output;
 }
